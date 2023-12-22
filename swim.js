@@ -26,3 +26,14 @@ import config from './next.config'
         "denom": "urun",
         "displayName": "RUN",
         "fraction": 1000000
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "cross-env NEXT_PUBLIC_API_KEY=http://mock-api.com jest --watch",
+    "test-coverage": "cross-env NEXT_PUBLIC_API_KEY=http://mock-api.com jest --coverage",
+    "test-dev": "cross-env NEXT_PUBLIC_API_KEY=http://mock-api.com jest --watch",
+    "test:ci": "jest --ci",
+    "lint": "next lint --dir @next --dir pages"}
