@@ -37,3 +37,9 @@ import config from './next.config'
     "test-dev": "cross-env NEXT_PUBLIC_API_KEY=http://mock-api.com jest --watch",
     "test:ci": "jest --ci",
     "lint": "next lint --dir @next --dir pages"}
+
+     publicRuntimeConfig: {
+    // Will be available on client
+    apiKey: process.env.NEXT_PUBLIC_API_KEY,
+    settings
+  }
